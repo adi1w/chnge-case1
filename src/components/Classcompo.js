@@ -1,21 +1,16 @@
-import React, { Component } from "react";
-// import "index.css"
-// import "Appp.css"
-class ClassCompo extends Component{
+import React,{Component} from 'react'
 
+class ClassCompo extends Component{
+    
     render(){
-        let classStyle= {new:{
-            color:"black",
-        }}
         return(
-            <div className="Classcomponent">
-             
-                <h1 className=""> This is created using Class Component </h1>
-                <h2 style={classStyle.new}>This is done using external CSS</h2>
-               <h3 style={{color:"blue"}}>This is done using inline CSS</h3>
+            <div className='two'>
+            <h1 className=''>This is created using Class Component</h1>
+            <p  className=''>This is done by External Css</p>
+            <p style={{color:'blue',textAlign:'center'}} >This is done by Inline Css</p>
             </div>
         )
     }
 }
 
-export default ClassCompo;
+export default ClassCompo
